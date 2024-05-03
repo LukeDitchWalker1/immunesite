@@ -2,10 +2,9 @@
 <html> <!-- Code -->
     <head> <!-- Title and Important Stuff -->
         <title>3D Immune System</title> <!-- Title -->
-        
+        <link rel="icon" type="image/x-icon" href="../images/logo.png"> <!-- Icon -->
         <!-- Java Script-->
         <script></script>
-
         <!-- CSS -->
         <style>
         body {
@@ -20,16 +19,22 @@
         .navbar {
             color: white;
             background-color: #333;
-            padding: 5px;
+            padding: 10px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: large;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
         }
 
         .navbar-item {
             color: white;
         }
-        </style>
 
+        p {
+            color: white;
+        }
+        </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Optimize Webpage Loading -->
         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script> <!-- Import <model-viewer> Library --> 
     </head>
@@ -38,7 +43,7 @@
             <a href="index.html" class="navbar-item">home</a> <!-- Add Home Button to navbar-->
          </div>
         <h1>Home</h1> <!-- Home Header -->
-        <p></p> <!-- Basic Text -->
+        <p>Test</p> <!-- Basic Text -->
         <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="../models/Astronaut.glb" camera-controls touch-action="pan-y"></model-viewer> <!-- Test Model -->
     </body>
 </html> <!-- Code End -->
