@@ -4,6 +4,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
         <style>
+            .navbar {
+                color: white;
+                background-color: #333;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                align-items: first baseline;
+                justify-content: space-between;
+                display: flex;
+            }
+            .navbar-item {
+                color: white;
+            }
             body {
                 font-family: Arial;
                 background-color: #222;
@@ -55,6 +68,9 @@
         </style>
     </head>
     <body>
+        <div class="navbar">
+            <a href="index.html" class="navbar-item">home</a> <!-- Add Home Button to navbar-->                             
+        </div>
 
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'Anti')">Antibodies</button>
@@ -85,9 +101,25 @@
         </div>
 
         <div id="Lymphatic" class="tabcontent">
-            <h3>Lymphatic System</h3>
+            <!-- There is a lot more parts of the lymphatic system but that is for a different project.-->
             <model-viewer alt="Lymphatic" src="../models/Astronaut.glb" camera-controls touch-action="pan-y"></model-viewer>
-            <p></p>
+            <h3>The Lymphatic System: A Vital Network for Immunity and Fluid Balance</h3>
+            <p>The lymphatic system is a critical part of the human body that plays a crucial role in maintaining immunity and fluid balance. Comprising a network of vessels, nodes, and organs, this system works in coordination with the circulatory system to protect the body from infections and diseases while also helping in the removal of excess fluids and waste products.</p>
+            <h3>Components of the Lymphatic System</h3>
+            <p>Lymphatic Vessels: These vessels form a network that runs parallel to the blood vessels and collects excess fluid, proteins, and waste products from the body tissues.</p>
+            <p>Lymph Nodes: These small, bean-shaped structures act as filters for the lymph fluid, trapping and destroying pathogens such as bacteria and viruses.</p>
+            <p>Lymphatic Organs: The spleen, thymus, tonsils, and adenoids are key organs of the lymphatic system that play roles in immune response and the production of white blood cells.</p>
+            <h3>Functions of the Lymphatic System:</h3>
+            <p>Immune Response: The lymphatic system is a crucial component of the body's immune defense mechanism. Lymph nodes contain white blood cells called lymphocytes that help identify and destroy pathogens, preventing infections.</p>
+            <p>Fluid Balance: By collecting excess fluid and proteins from tissues and returning them to the bloodstream, the lymphatic system helps maintain fluid balance in the body. This prevents swelling and edema.</p>
+            <p>Absorption of Fats: Specialized lymphatic vessels called lacteals in the small intestine absorb dietary fats and fat-soluble vitamins, playing a role in the digestive process.</p>
+            <p>Waste Removal: The lymphatic system helps remove cellular waste, toxins, and debris from the body, aiding in overall detoxification.</p>
+            <h3>Disorders of the Lymphatic System:</h3>
+            <p>Lymphedema: This condition occurs when the lymphatic system is impaired, leading to swelling (usually in the arms or legs) due to the accumulation of fluid.</p>
+            <p>Lymphadenopathy: Enlarged lymph nodes can be a sign of infection, inflammation, or cancer, requiring medical evaluation.</p>
+            <p>Lymphoma: This is a type of cancer that affects the lymphatic system, specifically the lymphocytes, leading to abnormal cell growth and the formation of tumors.</p>
+            <h3>Conclusion:</h3>
+            <p>In conclusion, the lymphatic system is a vital network in the human body that performs essential functions related to immunity, fluid balance, and waste removal. Understanding the importance of this system can help individuals appreciate the intricate mechanisms that work tirelessly to keep the body healthy and functioning optimally. Proper care and maintenance of the lymphatic system through a healthy lifestyle, regular exercise, and medical check-ups are crucial for overall well-being and longevity.</p>
         </div>
 
         <div id="Spleen" class="tabcontent">
@@ -104,7 +136,7 @@
 
         <div id="wbc" class="tabcontent">
             <h3>White Blood Cells</h3>
-            <model-viewer alt="wbc" src="../models/Astronaut.glb" camera-controls touch-action="pan-y"></model-viewer>
+            <model-viewer alt="wbc" src="../models/WhiteBloodCell_For_school_project.gltf" camera-controls touch-action="pan-y"></model-viewer>
             <p></p>
         </div>
 
